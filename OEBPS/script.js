@@ -42,15 +42,19 @@ function toggle_hidden2() {
   elem2_3.style.display = "none";
 }
 
-var field1=document.getElementsByName = "field1";
-var field3=document.getElementsByName = "field3";
-function check(){
+var commentForm = document.getElementById("comment-form");
+
+commentForm.addEventListener("submit", check, false);
+
+function check(event){
+    event.preventDefault();
+
 	var flag = 0;
 	// 設定開始（必須にする項目を設定してください）
-	if(document.form1.field1.value == ""){ // 「お名前」の入力をチェック
+	if(commentForm.field1.value == ""){ // 「お名前」の入力をチェック
 		flag = 1;
 	}
-	else if(document.form1.field3.value == ""){ // 「コメント」の入力をチェック
+	else if(commentForm.field3.value == ""){ // 「コメント」の入力をチェック
 		flag = 1;
 	}
 
