@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" unique-identifier="bookid">
+<!-- 
+Time-stamp: <2010-06-24-11:17:25-liza>
+-->
+  <metadata>
+    <dc:identifier id="bookid">urn:uuid:4c191974-c491-4ad0-aa53-62ec5fed9feb</dc:identifier>
+    <dc:title>Interactivity example using "Cooking With Booze" by James Bridle</dc:title> 
+    <dc:rights>Creative Commons Attribution-Noncommercial-Share Alike 3.0</dc:rights>
+    <dc:publisher>Threepress Consulting Inc.</dc:publisher>  
+    <dc:date >2010-06-22</dc:date>
+    <dc:description >EPUB book using JavaScript to enhance textual presentation</dc:description>
+    <dc:creator xmlns:opf="http://www.idpf.org/2007/opf" opf:file-as="Daly, Liza">Liza Daly</dc:creator>
+    <dc:contributor xmlns:opf="http://www.idpf.org/2007/opf" opf:file-as="Bridle, James">James Bridle</dc:contributor>
+    <dc:language>en</dc:language>
+    <meta name="cover" content="cover-image" />
+   </metadata>  
+  <manifest>
+    <item id="ncxtoc" media-type="application/x-dtbncx+xml" href="toc.ncx"/>
+    <item id="content" href="index.html" media-type="application/xhtml+xml"/>
+    <item id="cover" href="cover.html" media-type="application/xhtml+xml"/>
+    <item id="css" href="style.css" media-type="text/css"/>
+    <item id="script" href="script.js" media-type="text/javascript"/>
+    <item id="image1" href="turkey.jpg" media-type="image/jpeg" />
+    <item id="image2" href="honey.jpg" media-type="image/jpeg" />
+    <item id="cover-image" href="cover.png" media-type="image/png" />
+  </manifest>
+  <spine toc="ncxtoc">
+    <itemref idref="content" linear="yes"/>
+  </spine> 
+  <guide>
+    <reference type="cover" title="Cover" href="cover.html"/>
+  </guide>
+</package>
+    
