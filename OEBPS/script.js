@@ -42,10 +42,14 @@ function toggle_hidden2() {
   elem2_3.style.display = "none";
 }
 
+//HTML で記録したフォームないのID を変数に登録。
+//これを行うことで、フォーム内で宣言された名前などは、子として扱うことができる。
 var commentForm = document.getElementById("comment-form");
 
+//投稿したコメントを呼び出し、記入されているかチェックする。
 commentForm.addEventListener("submit", check, false);
 
+//
 function check(event){
     event.preventDefault();
 
